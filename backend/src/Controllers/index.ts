@@ -1,9 +1,3 @@
-import {
-  createEvent,
-  getAllEvents,
-  getEventById,
-  updateEvent,
-  deleteEvent,
-} from "./Events";
+import EventController from "./Events";
 
-export { createEvent, getAllEvents, getEventById, updateEvent, deleteEvent };
+export { EventController };
