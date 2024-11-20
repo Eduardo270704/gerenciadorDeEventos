@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de Eventos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Gestão de Eventos</h1>
+        <button id="add-event-btn">+ Adicionar Evento</button>
+      </header>
+      <div id="event-form" class="event-form hidden">
+        <h2>Criar Novo Evento</h2>
+        <input type="text" id="event-name" placeholder="Nome do Evento" />
+        <input type="text" id="event-location" placeholder="Localização" />
+        <input type="datetime-local" id="event-date" />
+        <textarea
+          id="event-description"
+          placeholder="Descrição do Evento"
+        ></textarea>
+        <button id="submit-event-btn">Salvar Evento</button>
+        <button id="cancel-event-btn">Cancelar</button>
+        <span id="form-feedback" class="form-feedback"></span>
+      </div>
+      <div id="event-list">
+        <h2>Lista de Eventos</h2>
+        <ul id="events-ul" data-id="event.id"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
